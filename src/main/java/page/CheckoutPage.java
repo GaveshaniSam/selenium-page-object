@@ -25,5 +25,4 @@ public class CheckoutPage {
     public void clickOnContinue() {
         driver.findElement(By.xpath("//input[@class='btn_primary cart_button']")).click();
     }
-
 }
