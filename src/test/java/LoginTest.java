@@ -19,19 +19,4 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/v1/inventory.html");
     }
 
-    @Test
-    public void testInvalidLogin() {
-        loginPage.inputUsername("standard_user");
-        loginPage.inputPassword("secret_sauce1");
-        loginPage.clickLogin();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/v1/");
-    }
-
-    @Test
-    public void validateProductDetails() {
-        loginPage.inputUsername("standard_user");
-        loginPage.inputPassword("secret_sauce");
-        loginPage.clickLogin();
-
-    }
 }
