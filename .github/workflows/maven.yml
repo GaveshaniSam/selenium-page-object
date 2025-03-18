@@ -31,6 +31,6 @@ jobs:
       uses: browser-actions/setup-chrome@latest
       with:
         chrome-version: 'latest'    
-    - name: Build and run tests
-      run: mvn clean test
+    - name: Run tests
+      run: mvn test
 
